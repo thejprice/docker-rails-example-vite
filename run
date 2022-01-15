@@ -98,6 +98,11 @@ function yarn:outdated {
   _dc js yarn outdated
 }
 
+function vite:dev {
+  npm install
+  vite dev --host 8000
+}
+
 function yarn:build {
   # Build JS assets, this is only meant to be referenced from your package.json
   local args=()

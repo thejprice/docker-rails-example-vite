@@ -28,3 +28,12 @@ yarn-debug.log*
 .env*
 !.env.example
 docker-compose.override.yml
+
+# Vite Ruby
+/public/vite
+/public/vite-dev
+/public/vite-test
+node_modules
+*.local
+.DS_Store
+
