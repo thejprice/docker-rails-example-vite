@@ -1,5 +1,5 @@
 #!/bin/sh
 
 echo "BUILDING VITE ================================================"
-npm install
+yarn install
 bin/vite dev

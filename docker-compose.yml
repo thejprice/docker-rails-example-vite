@@ -64,6 +64,18 @@ services:
       VITE_RUBY_HOST: 'vite'
     depends_on:
       - 'vite'
+  
+  vite:
+    build: .
+    entrypoint: ['./docker-vite.sh']
+    environment:
+      DEBUG: '*vite*'
+      RAILS_ENV: 'development'
+      VITE_RUBY_HOST: '0.0.0.0'
+    ports:
+      - '3036:3036'
+    volumes:
+      - '.:/app'
 
   worker:
     <<: *default-app
